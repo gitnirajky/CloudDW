@@ -1,0 +1,20 @@
+{
+	"name": "SqlServerTable_DWStage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServerDatawarehouseStage_p",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			},
+			"TableSchema": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "pipeprocessor",
+	"properties": {
+		"concurrency": 2,
+		"folder": {
+			"name": "AzurePipelines"
+		},
+		"annotations": []
+	}
+}

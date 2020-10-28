@@ -2,6 +2,14 @@
 	"name": "pipeprocessor",
 	"properties": {
 		"concurrency": 2,
+		"parameters": {
+			"Tasktype": {
+				"type": "string"
+			},
+			"TaskParam": {
+				"type": "object"
+			}
+		},
 		"folder": {
 			"name": "AzurePipelines"
 		},

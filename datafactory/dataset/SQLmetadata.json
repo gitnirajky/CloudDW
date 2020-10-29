@@ -1,0 +1,16 @@
+{
+	"name": "SQLmetadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServerDatawarehouseStage_p",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "",
+			"table": ""
+		}
+	}
+}

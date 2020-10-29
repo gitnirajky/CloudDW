@@ -1,6 +1,44 @@
 {
 	"name": "pipeprocessor",
 	"properties": {
+		"activities": [
+			{
+				"name": "ForEachTableList",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": false,
+					"activities": [
+						{
+							"name": "Lookuptable",
+							"type": "Lookup",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"typeProperties": {
+								"source": {
+									"type": "SqlServerSource",
+									"sqlReaderQuery": "SELECT TOP (3) TABLE_NAME,TABLE_SCHEMA FROM information_schema.Tables WHERE TABLE_Schema = 'Insurance'",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
+								},
+								"dataset": {
+									"referenceName": "SQLmetadata",
+									"type": "DatasetReference"
+								},
+								"firstRowOnly": false
+							}
+						}
+					]
+				}
+			}
+		],
 		"concurrency": 2,
 		"parameters": {
 			"Tasktype": {

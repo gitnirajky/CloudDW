@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Lookuptable').output",
+						"value": "@activity('Lookuptable').output.value",
 						"type": "Expression"
 					},
 					"isSequential": false,

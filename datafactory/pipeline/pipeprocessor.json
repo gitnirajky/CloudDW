@@ -73,7 +73,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"FileName": {
-											"value": "concat(@item().Table_Schema,\"_\",@item().Table_Name, \".jason\")",
+											"value": "@concat(item().Table_Schema,'_',item().Table_Name,'.jason')",
 											"type": "Expression"
 										}
 									}

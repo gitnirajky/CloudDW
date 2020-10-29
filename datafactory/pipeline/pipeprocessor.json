@@ -94,6 +94,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [
+					{
+						"name": "Table_Name",
+						"value": "BrokerDetails"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",

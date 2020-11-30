@@ -1,0 +1,32 @@
+{
+	"name": "SqlServerTable_DWStage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServerDatawarehouseStage_p",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string",
+				"defaultValue": "BrokerDetails"
+			},
+			"TableSchema": {
+				"type": "string",
+				"defaultValue": "Insurance"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().TableSchema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"name": "selfhostedIR",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Self hosted on Prem SQL Server"
+	}
+}
